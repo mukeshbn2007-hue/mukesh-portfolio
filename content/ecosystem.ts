@@ -34,18 +34,18 @@ export const mukiiqEcosystem: EcosystemOverview = {
     {
       id: "ai-workforce",
       name: "Intelligent Systems & Orchestration",
-      tagline: "Structured multi-agent workflows and task coordination",
+      tagline: "Multi-provider agent coordination and cost-aware task routing",
       roleInEcosystem:
-        "Applied AI systems research focused on decomposing complex multi-step objectives into reliable agent workflows.",
-      projectSlugs: ["ai-dealer"],
+        "Applied AI systems work behind AI Manager (also known as AI Dealer), focused on decomposing complex multi-step objectives into reliable, credit-efficient agent workflows.",
+      projectSlugs: ["ai-manager"],
       status: "Developing",
       description:
-        "Explores supervisor-worker orchestration patterns where specialized agents collaborate through bounded tools and structured handoffs.",
+        "Explores supervisor-worker orchestration and model-routing patterns where specialized agents collaborate across providers with cost-aware task allocation.",
       keyCapabilities: [
         "Task graph decomposition for multi-step problems",
+        "Cost-aware routing to suitable AI providers and models",
         "Role-scoped worker delegation and context control",
-        "Typed output verification at handoff boundaries",
-        "Iterative recovery when sub-tasks fail",
+        "Typed output verification and recovery on sub-task failure",
       ],
     },
     {

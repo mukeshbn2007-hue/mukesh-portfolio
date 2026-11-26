@@ -27,7 +27,7 @@ export function Hero({ githubUrl = VERIFIED_LINKS.github }: HeroProps) {
           </h1>
 
           <p className="text-base sm:text-lg text-zinc-600 leading-relaxed max-w-2xl font-normal">
-            I am Mukesh B N. I build practical software systems spanning AI workforce orchestration (<span className="text-zinc-900 font-medium">AI Dealer</span>), audio stem separation (<span className="text-zinc-900 font-medium">AI STEM Splitter</span>), energy intelligence (<span className="text-zinc-900 font-medium">GridBee</span>), and <span className="text-zinc-900 font-medium">EV Battery Intelligence</span> under the <span className="text-zinc-900 font-medium">MUKIIQ</span> ecosystem.
+            I am Mukesh B N. I build practical software systems spanning AI workforce orchestration (<span className="text-zinc-900 font-medium">AI Manager</span>), audio stem separation (<span className="text-zinc-900 font-medium">AI STEM Splitter</span>), and <span className="text-zinc-900 font-medium">EV Battery Intelligence</span> under the <span className="text-zinc-900 font-medium">MUKIIQ</span> ecosystem.
           </p>
         </div>
 
@@ -58,7 +58,7 @@ export function Hero({ githubUrl = VERIFIED_LINKS.github }: HeroProps) {
               AI Workforce Orchestration
             </p>
             <p className="text-xs text-zinc-600 leading-normal">
-              Directed task decomposition, role-scoped agents, and validated handoffs.
+              Multi-provider coordination, cost-aware model routing, and bounded agent workflows.
             </p>
           </div>
 
@@ -76,13 +76,13 @@ export function Hero({ githubUrl = VERIFIED_LINKS.github }: HeroProps) {
 
           <div className="space-y-1">
             <span className="font-mono text-[11px] uppercase tracking-wider text-zinc-500 font-semibold">
-              Energy &amp; CleanTech
+              CleanTech &amp; Diagnostics
             </span>
             <p className="text-sm font-medium text-zinc-900">
-              Telemetry &amp; Diagnostics
+              EV Battery Intelligence
             </p>
             <p className="text-xs text-zinc-600 leading-normal">
-              GridBee energy monitoring and EV battery health modeling pipelines.
+              Cell-level telemetry analysis, thermal tracking, and State of Health modeling.
             </p>
           </div>
         </div>

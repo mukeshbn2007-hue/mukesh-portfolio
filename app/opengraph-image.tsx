@@ -79,7 +79,7 @@ export default function OpenGraphImage() {
               lineHeight: 1.4,
             }}
           >
-            AI Dealer · AI STEM Splitter · MUKIIQ RISE · GridBee · EV Battery Intelligence
+            AI Manager · AI STEM Splitter · MUKIIQ RISE · EV Battery Intelligence
           </div>
         </div>
 

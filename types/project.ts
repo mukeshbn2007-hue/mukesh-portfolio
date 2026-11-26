@@ -1,7 +1,6 @@
 export type ProjectCategory =
   | "AI & Multi-Agent Systems"
   | "Audio Intelligence & DSP"
-  | "Energy & IoT Systems"
   | "CleanTech & Diagnostics"
   | "Product & Ecosystem Platforms";
 

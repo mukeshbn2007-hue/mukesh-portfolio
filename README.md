@@ -1,15 +1,14 @@
 # Mukesh B N — Engineering Portfolio & Architecture Log
 
-Personal engineering portfolio and technical project catalog of **Mukesh B N**, showcasing applied artificial intelligence, multi-agent workforce orchestration, audio digital signal processing (DSP), and energy telemetry under the **MUKIIQ** ecosystem.
+Personal engineering portfolio and technical project catalog of **Mukesh B N**, showcasing applied artificial intelligence, AI workforce orchestration, audio processing, and EV battery diagnostics under the **MUKIIQ** ecosystem.
 
 ## Featured Technical Projects
 
-1. **AI Dealer**: Hierarchical AI workforce orchestration and autonomous task delegation engine using directed acyclic graphs (DAGs).
-2. **AI STEM Splitter**: Deep learning audio source separation platform and synchronized multi-track Web Audio API player.
+1. **AI Manager** *(also known as AI Dealer)*: AI Workforce Orchestration — a developer-focused platform that coordinates multiple AI providers and agents, routes tasks to suitable models, and aims to improve AI credit efficiency and cost-aware execution.
+2. **AI STEM Splitter**: AI-powered audio stem separation platform under the MUKIIQ ecosystem.
 3. **MUKIIQ Ecosystem**: Umbrella technical initiative and product laboratory uniting specialized digital systems.
-4. **GridBee**: Real-time energy telemetry ingestion, load profiling, and statistical anomaly detection.
-5. **EV Battery Intelligence / Analyser**: Cell-level BMS diagnostics, delta-V spread tracking, and State of Health (SoH) modeling.
-6. **MUKIIQ RISE**: Engineering roadmap platform and technical capability accelerator.
+4. **EV Battery Intelligence / Analyser**: Cell-level BMS diagnostics, delta-V spread tracking, and State of Health (SoH) modeling.
+5. **MUKIIQ RISE**: Engineering roadmap platform and technical capability accelerator.
 
 ## Technology Stack
 

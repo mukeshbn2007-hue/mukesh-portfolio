@@ -46,13 +46,13 @@ export const profile: Profile = {
     "Building applied AI systems, full-stack web products, and domain-specific software architectures.",
   role: "AI & Software Systems Engineer",
   bio: [
-    "I am a Computer Science student and independent builder focused on applied artificial intelligence, full-stack product engineering, and systems thinking. My work centers on taking concrete technical problems and structuring them into clean, usable software—spanning AI workforce orchestration, audio stem separation, and energy/EV telemetry analysis.",
+    "I am a Computer Science student and independent builder focused on applied artificial intelligence, full-stack product engineering, and systems thinking. My work centers on taking concrete technical problems and structuring them into clean, usable software—spanning AI workforce orchestration, audio stem separation, and EV battery diagnostics.",
     "Through MUKIIQ, my umbrella product lab and technology ecosystem, I develop and document projects from first principles: defining clear boundaries, prioritizing type safety, and staying transparent about what is deployed versus actively in development.",
   ],
   focusAreas: [
-    "AI Workforce Orchestration (AI Dealer)",
+    "AI Workforce Orchestration (AI Manager / AI Dealer)",
     "AI Audio Stem Separation (AI STEM Splitter)",
-    "Energy & EV Battery Intelligence (GridBee & EV Analyser)",
+    "EV Battery Intelligence & CleanTech Diagnostics",
     "Full-Stack Next.js, TypeScript & Python Engineering",
   ],
   location: "India",
@@ -147,9 +147,9 @@ export const profile: Profile = {
       description:
         "Applied technical domains actively explored across MUKIIQ and independent builds.",
       skills: [
-        { name: "AI Agent Orchestration", note: "Task decomposition & worker routing" },
+        { name: "AI Agent Orchestration", note: "Multi-provider task decomposition & worker routing" },
+        { name: "Cost-Aware Model Routing", note: "Credit-efficient task-to-model matching" },
         { name: "AI Audio Processing", note: "Stem separation workflows" },
-        { name: "Energy Systems Analysis", note: "Monitoring & anomaly exploration" },
         { name: "EV Battery Diagnostics", note: "Cell delta & SoH modeling concepts" },
       ],
     },

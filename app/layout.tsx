@@ -28,15 +28,16 @@ export const metadata: Metadata = {
     template: "%s | Mukesh B N",
   },
   description:
-    "Engineering portfolio of Mukesh B N. Building applied AI systems, workforce orchestration (AI Dealer), audio stem separation (AI STEM Splitter), energy monitoring (GridBee), and EV battery diagnostics under the MUKIIQ ecosystem.",
+    "Engineering portfolio of Mukesh B N. Building applied AI systems, AI workforce orchestration (AI Manager), audio stem separation (AI STEM Splitter), and EV battery diagnostics under the MUKIIQ ecosystem.",
   keywords: [
     "Mukesh B N",
     "MUKIIQ",
     "MUKIIQ RISE",
     "AI Systems Engineer",
+    "AI Manager",
     "AI Dealer",
+    "AI Workforce Orchestration",
     "AI STEM Splitter",
-    "GridBee",
     "EV Battery Intelligence",
     "Next.js",
     "Python",
@@ -53,14 +54,14 @@ export const metadata: Metadata = {
     url: "/",
     title: "Mukesh B N — AI & Software Systems Engineer",
     description:
-      "Building applied AI systems, multi-agent workforce orchestration, audio stem separation, and energy intelligence under MUKIIQ.",
+      "Building applied AI systems, multi-provider AI workforce orchestration (AI Manager), audio stem separation, and EV battery diagnostics under MUKIIQ.",
     siteName: "Mukesh B N",
   },
   twitter: {
     card: "summary_large_image",
     title: "Mukesh B N — AI & Software Systems Engineer",
     description:
-      "Building applied AI systems, multi-agent workforce orchestration, audio stem separation, and energy intelligence under MUKIIQ.",
+      "Building applied AI systems, multi-provider AI workforce orchestration (AI Manager), audio stem separation, and EV battery diagnostics under MUKIIQ.",
   },
   robots: {
     index: true,
@@ -87,18 +88,18 @@ export default function RootLayout({
     alternateName: "Mukesh",
     jobTitle: "AI & Software Systems Engineer",
     description:
-      "Software builder specializing in applied AI systems, multi-agent orchestration, audio processing, and energy telemetry under the MUKIIQ ecosystem.",
+      "Software builder specializing in applied AI systems, multi-provider workforce orchestration, audio processing, and EV battery diagnostics under the MUKIIQ ecosystem.",
     url: SITE_URL,
     sameAs: [VERIFIED_LINKS.github, VERIFIED_LINKS.mukiiqLive],
     knowsAbout: [
       "Artificial Intelligence",
-      "Multi-Agent Orchestration",
+      "AI Workforce Orchestration",
       "Audio Stem Separation",
       "Full-Stack Web Development",
       "Next.js",
       "Python",
       "TypeScript",
-      "Energy Systems",
+      "EV Battery Diagnostics",
     ],
   };
 

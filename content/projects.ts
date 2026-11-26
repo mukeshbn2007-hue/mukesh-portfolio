@@ -3,10 +3,9 @@ import { VERIFIED_LINKS } from "@/lib/constants";
 
 export const projects: Project[] = [
   {
-    slug: "ai-dealer",
-    name: "AI Dealer",
-    tagline:
-      "Hierarchical AI workforce orchestration and structured multi-agent workflow engine",
+    slug: "ai-manager",
+    name: "AI Manager",
+    tagline: "AI Workforce Orchestration",
     category: "AI & Multi-Agent Systems",
     status: "Active Development",
     isFlagship: true,
@@ -14,35 +13,35 @@ export const projects: Project[] = [
     role: "System Architect & Developer",
     stageLabel: "Active Architecture & Prototyping",
     summary:
-      "An AI workforce orchestration project exploring how specialized agents can be coordinated into reliable, structured workflows. Instead of relying on monolithic single-prompt interactions, AI Dealer decomposes objectives into explicit task graphs, routes work to specialized agent roles, and validates handoffs.",
+      "A developer-focused platform that coordinates multiple AI providers and agents, routes tasks to suitable models, and aims to improve AI credit efficiency and cost-aware execution. Also known as AI Dealer, it explores structured task decomposition and role-scoped worker execution.",
     problemStatement:
-      "Single-prompt LLM workflows degrade on multi-step engineering and operational tasks due to context saturation, ambiguous tool invocations, and lack of intermediate verification. Effective autonomous systems require division of labor, bounded permissions, and explicit failure handling.",
+      "Relying on a single frontier model or monolithic prompt for every step of a software workflow drives up token and credit costs while degrading reliability on multi-step tasks. Developers often lack unified coordination across providers, causing unnecessary spend on trivial steps and context saturation on complex reasoning.",
     solution:
-      "AI Dealer models agent execution as a directed workflow graph. An orchestrator breaks user objectives into discrete sub-tasks, assigns them to specialized worker roles (such as research, synthesis, and verification), and tracks completion state across bounded execution steps.",
+      "AI Manager (AI Dealer) models multi-agent execution as a structured task graph with cost-aware routing. An orchestrator breaks developer objectives into discrete sub-tasks, selects suitable models and providers per task complexity, coordinates specialized agent workers, and validates outputs across bounded steps.",
     architecture: {
-      pattern: "Supervisor-Worker Task Graph Orchestration",
+      pattern: "Multi-Provider Task Graph & Cost-Aware Router",
       overview:
-        "Separates high-level planning, domain-specific worker execution, and output validation into modular stages with explicit handoff contracts.",
+        "Separates objective decomposition, model/provider routing, role-scoped agent execution, and output validation into modular stages aimed at credit efficiency.",
       stages: [
         {
           step: "01",
           title: "Objective Decomposition",
-          detail: "Translates a complex request into discrete, ordered sub-tasks with clear acceptance criteria.",
+          detail: "Translates developer requests into ordered sub-tasks with explicit scope and acceptance criteria.",
         },
         {
           step: "02",
-          title: "Role-Based Dispatch",
-          detail: "Routes individual tasks to scoped worker prompts equipped only with relevant tools and context.",
+          title: "Model & Provider Routing",
+          detail: "Matches each sub-task to an appropriate model tier across AI providers based on complexity and cost considerations.",
         },
         {
           step: "03",
-          title: "Bounded Tool Execution",
-          detail: "Executes discrete read, search, or analysis actions while isolating intermediate working state.",
+          title: "Scoped Agent Execution",
+          detail: "Dispatches tasks to specialized worker roles with bounded tools and isolated working context.",
         },
         {
           step: "04",
-          title: "Output Validation & Retry",
-          detail: "Verifies structured outputs against expected constraints before merging results or triggering remediation.",
+          title: "Validation & State Handoff",
+          detail: "Verifies structured outputs against expected constraints before consolidating results or retrying.",
         },
       ],
     },
@@ -50,54 +49,60 @@ export const projects: Project[] = [
       languages: ["Python", "TypeScript"],
       frameworks: ["Next.js", "React"],
       domainAndAi: [
-        "Multi-Agent Orchestration",
+        "AI Workforce Orchestration",
+        "Multi-Provider Routing",
+        "Cost-Aware Execution",
         "Task Graph Decomposition",
-        "Structured Tool Calling",
-        "Context Management",
       ],
       targetOrSupporting: ["Schema Validation", "Workflow State Tracking"],
     },
     engineeringDecisions: [
       {
+        decision: "Task-level model routing instead of sending every step to one model",
+        rationale:
+          "Routing lightweight formatting or lookup steps to smaller models while reserving larger reasoning models for complex synthesis is designed to improve credit efficiency without sacrificing output quality.",
+      },
+      {
         decision: "Structured task contracts over free-form agent chat",
         rationale:
-          "Constraining inter-agent handoffs to defined fields reduces ambiguity and prevents cascading errors across multi-step workflows.",
+          "Constraining inter-agent handoffs to defined fields reduces ambiguity, trims unnecessary token overhead, and prevents cascading errors across multi-step workflows.",
       },
       {
         decision: "Bounded execution loops with explicit retry limits",
         rationale:
-          "Prevents circular reasoning and runaway token consumption by surfacing failures clearly rather than looping indefinitely.",
+          "Prevents circular reasoning and runaway credit spend by surfacing failures clearly rather than looping indefinitely.",
       },
     ],
     challengesAndLearnings: [
       {
-        challenge: "Preventing context bloat when passing intermediate results between agents.",
+        challenge: "Preventing context bloat and redundant token spend across multi-agent handoffs.",
         resolutionOrLearning:
           "Learned to pass concise structured summaries and artifact references rather than forwarding full raw conversation histories.",
       },
       {
         challenge: "Designing reliable failure recovery when an intermediate sub-task produces partial results.",
         resolutionOrLearning:
-          "Structuring tasks around idempotent checkpoints makes re-running failed steps practical without restarting from scratch.",
+          "Structuring tasks around idempotent checkpoints makes re-running failed steps practical without re-paying for completed branches.",
       },
     ],
     implementation: {
       currentState: [
-        "Core system architecture and role taxonomy for workforce orchestration",
+        "Core architecture for AI workforce orchestration and role taxonomy (AI Manager / AI Dealer)",
         "Task decomposition patterns and structured handoff design",
       ],
       inProgress: [
-        "Prototype orchestration loop in Python for multi-step task routing",
-        "Validation rules for inspecting worker outputs prior to consolidation",
+        "Prototype orchestration loop in Python for multi-provider task routing",
+        "Cost-aware model selection rules and output validation checks",
       ],
       planned: [
-        "Web interface for inspecting task graphs, agent states, and execution logs",
+        "Developer web dashboard for inspecting task graphs, provider routing, and credit usage",
         "Isolated execution sandboxes for automated verification steps",
       ],
     },
     specs: [
-      { label: "Coordination Pattern", value: "Supervisor-Worker Task Graph" },
-      { label: "Primary Focus", value: "AI Workforce Orchestration" },
+      { label: "Alias", value: "AI Manager (also known as AI Dealer)" },
+      { label: "Coordination Pattern", value: "Multi-Provider Task Graph & Router" },
+      { label: "Primary Focus", value: "AI Workforce Orchestration & Credit Efficiency" },
       { label: "Maturity Stage", value: "Active Architecture & Prototyping" },
       { label: "Core Stack", value: "Python, TypeScript, Next.js" },
     ],
@@ -210,102 +215,6 @@ export const projects: Project[] = [
         url: VERIFIED_LINKS.mukiiqLive,
         type: "live",
       },
-      {
-        label: "GitHub Profile",
-        url: VERIFIED_LINKS.github,
-        type: "github",
-      },
-    ],
-  },
-  {
-    slug: "gridbee",
-    name: "GridBee",
-    tagline:
-      "Intelligent energy monitoring, consumption analysis, and grid decision support",
-    category: "Energy & IoT Systems",
-    status: "Architecture & Design",
-    isFlagship: false,
-    ecosystemRelation: "Independent Engineering Project",
-    role: "System Designer & Developer",
-    stageLabel: "In Development",
-    summary:
-      "An intelligent energy systems project exploring smarter monitoring, data analysis, and actionable insights for energy consumption. GridBee focuses on turning raw power and usage telemetry into clear diagnostics for identifying inefficiencies and supporting practical energy decisions.",
-    problemStatement:
-      "Energy systems and connected equipment generate large volumes of raw usage data, yet operators and end users often lack straightforward tools to interpret load patterns, spot inefficiencies early, and make informed consumption decisions.",
-    solution:
-      "GridBee explores a data-driven monitoring and analytics pipeline that structures time-series energy readings, highlights abnormal consumption patterns, and surfaces interpretable system intelligence.",
-    architecture: {
-      pattern: "Time-Series Energy Telemetry & Analysis Pipeline",
-      overview:
-        "Structures raw energy measurements into normalized chronological streams for baseline profiling and anomaly detection.",
-      stages: [
-        {
-          step: "01",
-          title: "Telemetry Collection",
-          detail: "Ingests structured power, voltage, and consumption time-series records.",
-        },
-        {
-          step: "02",
-          title: "Normalization & Profiling",
-          detail: "Aligns timestamps and computes rolling consumption baselines and peak load windows.",
-        },
-        {
-          step: "03",
-          title: "Inefficiency & Anomaly Detection",
-          detail: "Evaluates deviations against historical usage patterns to flag irregular demand.",
-        },
-        {
-          step: "04",
-          title: "Decision Interface",
-          detail: "Presents concise operational insights and trend visualizations.",
-        },
-      ],
-    },
-    techStack: {
-      languages: ["Python", "TypeScript"],
-      frameworks: ["Next.js"],
-      domainAndAi: [
-        "Energy Systems",
-        "Time-Series Data Analysis",
-        "Anomaly Modeling",
-      ],
-      targetOrSupporting: ["Telemetry Ingestion", "Monitoring Dashboards"],
-    },
-    engineeringDecisions: [
-      {
-        decision: "Prioritizing interpretable statistical baselines before complex black-box models",
-        rationale:
-          "Energy operators need transparent explanations for why an anomaly or peak alert was triggered before trusting automated recommendations.",
-      },
-    ],
-    challengesAndLearnings: [
-      {
-        challenge: "Handling irregular sampling intervals and missing readings in energy logs.",
-        resolutionOrLearning:
-          "Learned to normalize time-series windows explicitly before calculating aggregate load metrics to avoid distorted averages.",
-      },
-    ],
-    implementation: {
-      currentState: [
-        "Problem domain definition and energy intelligence system architecture",
-        "Exploratory data analysis workflows in Python",
-      ],
-      inProgress: [
-        "Modeling load-profiling and inefficiency indicators on sample energy datasets",
-        "Designing clean monitoring views for power telemetry trends",
-      ],
-      planned: [
-        "Real-time sensor or smart-meter ingestion adapters",
-        "Automated forecasting for peak demand periods",
-      ],
-    },
-    specs: [
-      { label: "Domain", value: "Intelligent Energy Systems" },
-      { label: "Core Approach", value: "Time-Series Analysis & Monitoring" },
-      { label: "Maturity Stage", value: "In Development" },
-      { label: "Core Stack", value: "Python, Data Analysis, AI, Next.js" },
-    ],
-    links: [
       {
         label: "GitHub Profile",
         url: VERIFIED_LINKS.github,
